@@ -20,6 +20,12 @@ namespace NunitPlaywrightTests
             Assert.AreEqual("Swag Labs", pageTitle, "Page title should be 'Swag Labs'.");
         }
 
+        [Test]
+        public async Task VerifyLogin()
+        {
+
+        }
+
         [TearDown]
         public async Task TearDown()
         {
