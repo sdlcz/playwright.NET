@@ -9,7 +9,6 @@ namespace NunitPlaywrightTests
         [SetUp]
         public async Task SetUp()
         {
-            // Code to set up before each test
             await Page.GotoAsync("https://www.saucedemo.com/v1/");
         }
 
@@ -18,6 +17,9 @@ namespace NunitPlaywrightTests
         {
             var pageTitle = await Page.TitleAsync();
             Assert.AreEqual("Swag Labs", pageTitle, "Page title should be 'Swag Labs'.");
+
+            var loginButton = await Page.QuerySelectorAsync("#login-button");
+            Assert.IsNotNull(loginButton,"Login button should be present on the page");
         }
 
         [Test]
@@ -29,7 +31,6 @@ namespace NunitPlaywrightTests
         [TearDown]
         public async Task TearDown()
         {
-            // Code to run after each test
             await Page.CloseAsync();
         }
     }
