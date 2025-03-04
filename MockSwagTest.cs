@@ -23,8 +23,16 @@ namespace NunitPlaywrightTests
         }
 
         [Test]
-        public async Task VerifyLogin()
-        {
+        public async Task VerifyValidLogin()
+        { //Positive
+           //Create auth directory to load existing authenticated state
+
+        }
+
+        [Test]
+        public async Task VerifyInValidLogin()
+        { //Negative
+
 
         }
 
