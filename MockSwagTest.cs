@@ -1,4 +1,6 @@
-﻿using Microsoft.Playwright.NUnit;
+﻿using NUnit.Framework;
+using Microsoft.Playwright;
+using Microsoft.Playwright.NUnit;
 
 namespace NunitPlaywrightTests
 {
