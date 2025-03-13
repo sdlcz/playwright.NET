@@ -35,12 +35,12 @@ namespace NunitPlaywrightTests
         public async Task VerifyInValidLogin()
         {
             // Negative test case for invalid login
-            await Page.FillAsync("#user-name", "invalid_user");
-            await Page.FillAsync("#password", "  ");
-            await Page.ClickAsync("#login-button");
+            await Page.FillAsync("//input[@id='user-name']", "invalid_user");
+            await Page.FillAsync("//input[@id='password']", "  ");
+            await Page.ClickAsync("//input[@id='login-button']");
 
-            var errorMessage = await Page.QuerySelectorAsync(".error-message-container");
-            Assert.IsNotNull(errorMessage, "Error message should be displayed after invalid login");
+var errorMessage = await Page.InnerTextAsync("//*[@id=\"login_button_container\"]/div/form/h3");
+Assert.That(errorMessage, Is.EqualTo("Epic sadface: Username and password do not match any user in this service"), "Error message should be displayed for invalid login");
 
         }
 
