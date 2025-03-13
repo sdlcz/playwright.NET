@@ -39,8 +39,8 @@ namespace NunitPlaywrightTests
             await Page.FillAsync("//input[@id='password']", "  ");
             await Page.ClickAsync("//input[@id='login-button']");
 
-var errorMessage = await Page.InnerTextAsync("//*[@id=\"login_button_container\"]/div/form/h3");
-Assert.That(errorMessage, Is.EqualTo("Epic sadface: Username and password do not match any user in this service"), "Error message should be displayed for invalid login");
+            var errorMessage = await Page.InnerTextAsync("//*[@id=\"login_button_container\"]/div/form/h3");
+            Assert.That(errorMessage, Is.EqualTo("Epic sadface: Username and password do not match any user in this service"), "Error message should be displayed for invalid login");
 
         }
 
