@@ -33,8 +33,14 @@ namespace NunitPlaywrightTests
 
         [Test]
         public async Task VerifyInValidLogin()
-        { //Negative
+        {
+            // Negative test case for invalid login
+            await Page.FillAsync("#user-name", "invalid_user");
+            await Page.FillAsync("#password", "  ");
+            await Page.ClickAsync("#login-button");
 
+            var errorMessage = await Page.QuerySelectorAsync(".error-message-container");
+            Assert.IsNotNull(errorMessage, "Error message should be displayed after invalid login");
 
         }
 

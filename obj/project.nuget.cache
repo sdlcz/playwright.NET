@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mkz9gKLL7q7pET0M/7t0EPpR0MOaVS1Ix/fYUIjNJuUCMbr7zkg4CZB6b6Fb8/4JTJcqvRqoHtCIBaitQyhWSA==",
+  "dgSpecHash": "V1Jq6wrPPao=",
   "success": true,
-  "projectFilePath": "C:\\Users\\stant\\Documents\\Projects\\PlaywrightProject\\PlaywrightTests\\NunitPlaywrightTests\\NunitPlaywrightTests.csproj",
+  "projectFilePath": "C:\\Users\\stant\\source\\repos\\sdlcz\\playwright.NET\\NunitPlaywrightTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\stant\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\stant\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
