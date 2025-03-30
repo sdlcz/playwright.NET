@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NunitPlaywrightTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6409a64a539a3f3b1affa3e33bbd14cec050f372")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+330de775bdcbf1a797614fb3565b662d3de00e7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("NunitPlaywrightTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NunitPlaywrightTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
